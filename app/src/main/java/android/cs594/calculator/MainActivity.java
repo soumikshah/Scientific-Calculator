@@ -45,8 +45,7 @@ public class MainActivity extends ActionBarActivity {
         divide=(Button)findViewById(R.id.divide);
         point=(Button)findViewById(R.id.point);
         textbox =(EditText)findViewById(R.id.screen);
-        InputMethodManager im = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
-        im.hideSoftInputFromWindow(textbox.getWindowToken(), 0);
+        textbox.setInputType(InputType.TYPE_NULL);
         final Intent intent = new Intent(MainActivity.this,MainActivity.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
          b1.setOnClickListener(new View.OnClickListener() {

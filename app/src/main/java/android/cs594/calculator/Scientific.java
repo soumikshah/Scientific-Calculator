@@ -3,6 +3,7 @@ package android.cs594.calculator;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.text.InputType;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -35,6 +36,7 @@ public class Scientific extends ActionBarActivity {
         opening = (Button)findViewById(R.id.opening);
         closing = (Button)findViewById(R.id.closing);
         textbox = (EditText)findViewById(R.id.screen1);
+        textbox.setInputType(InputType.TYPE_NULL);
         final Intent intent = new Intent(Scientific.this,MainActivity.class);
         sin.setOnClickListener(new View.OnClickListener() {
             @Override
