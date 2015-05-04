@@ -225,7 +225,7 @@ public class MainActivity extends ActionBarActivity {
                     for(double i=val2-1; i>0; i--){
                         val2 = i * val2;
 
-                        textbox.setText(" "+fact);
+                        textbox.setText(" "+val2);
                     }
                     Scientific.exclam1=false;
                 }
